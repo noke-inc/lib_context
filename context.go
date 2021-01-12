@@ -69,7 +69,7 @@ import (
 	stdctx "context"
 	"sync"
 
-	"github.com/posener/context/runtime"
+	"github.com/pantsmann/context/runtime"
 )
 
 type (
@@ -98,6 +98,7 @@ var (
 
 func init() {
 	storage = make(map[uint64][]Context)
+	Init()
 }
 
 // peek simulates fetching of context from goroutine local storage

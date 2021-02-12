@@ -81,6 +81,7 @@ var (
 	WithCancel   = stdctx.WithCancel
 	WithTimeout  = stdctx.WithTimeout
 	WithDeadline = stdctx.WithDeadline
+	WithValue    = stdctx.WithValue
 
 	Background = stdctx.Background
 
